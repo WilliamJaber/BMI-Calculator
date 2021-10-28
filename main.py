@@ -4,7 +4,7 @@ print('\nWelcome to your BMI calculator!!\n'
     'Please insert units expressed in centimeters, meters, and kilograms.')
 
 def main():
-    '''Calculates your Body Mass Index (BMI) and classify according to the result.'''
+    """Calculates your Body Mass Index (BMI) and classify according to the result."""
     while True:
         bmi = calculate_BMI()
         if bmi < 18.5:
@@ -23,7 +23,7 @@ def calculate_BMI():
     return user_weight / user_height ** 2
 
 def new_calculation():
-    '''Handles new BMI calculation option'''
+    """Handles new BMI calculation option."""
     while True:
         option = input('\nDo you want calculate your BMI again? (yes or no): ')
         if option not in ['yes', 'no']:
